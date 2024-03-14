@@ -1,0 +1,11 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: org.openrewrite.java.testing.junit5.StaticImports
+displayName: Statically import JUnit Jupiter assertions
+description: Always use a static import for assertion methods.
+tags:
+  - junit
+  - testing
+recipeList:
+  - org.openrewrite.java.UseStaticImport:
+      methodPattern: org.junit.jupiter.api.Assertions *(..)

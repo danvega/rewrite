@@ -1,4 +1,4 @@
-package dev.danvega.legacy;
+package dev.danvega;
 
 public class StringCalculator {
 

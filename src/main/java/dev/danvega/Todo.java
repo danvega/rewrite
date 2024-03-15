@@ -1,11 +1,12 @@
 package dev.danvega;
 
+import jakarta.validation.constraints.NotEmpty;
 import java.util.Objects;
 
 public class Todo {
 
     private final long id;
-
+    @NotEmpty
     private final String title;
     private final Boolean completed;
 

@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class StringCalculatorTest {
+class StringCalculatorTest {
 
     @Test
-    void shouldAddTwoStringNumbers() {
+    void shouldAddTwotStringNumbers() {
         StringCalculator stringCalculator = new StringCalculator();
-        int sum = stringCalculator.add("1,2");
-        assertEquals(3, sum);
+        int sum = stringCalculator.add("3,1");
+        assertEquals(4, sum);
     }
 
     @Test
@@ -19,5 +19,4 @@ public class StringCalculatorTest {
         int difference = stringCalculator.subtract("3,2");
         assertEquals(1, difference);
     }
-
 }
